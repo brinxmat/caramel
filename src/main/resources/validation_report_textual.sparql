@@ -1,0 +1,15 @@
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+SELECT * WHERE {
+
+  ?report a sh:ValidationReport ;
+    sh:conforms ?conforms ;
+    sh:result ?result .
+    ?result a sh:ValidationResult ;
+      sh:focusNode ?focusNode ;
+      sh:resultMessage ?message ;
+      sh:resultPath ?resultPath ;
+      sh:resultSeverity ?resultSeverity ;
+      sh:sourceConstraintComponent ?sourceConstraintComponent ;
+      sh:sourceShape ?sourceShape .
+}

@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@vocab": "http://unit.no/er/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "language": "@language",
+    "license": {
+      "@type": "@id"
+    },
+    "contributor": {
+      "@type": "@id"
+    },
+    "creator": {
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@type": "@id"
+    },
+    "description": {
+      "@type": "rdf:langString"
+    },
+    "label": {
+      "@type": "rdf:langString"
+    }
+  },
+  "type": "ConceptScheme",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "label": [{
+    "@value": "Hats",
+    "@language": "en"
+  },
+    {
+      "@value": "Hatter",
+      "@language": "no"
+    }],
+  "contributor": "http://link.to/library",
+  "creator": "http://link.to/library",
+  "description": {
+    "@value": "Some description",
+    "@language": "en"
+  },
+  "sameAs": ["http://link.to/other-thing-that-is-the-same", "http://link.to/another-thing-that-is-the-same"]
+}

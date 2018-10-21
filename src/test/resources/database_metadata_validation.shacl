@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix er: <http://unit.no/er/vocab#> .
+@prefix ex: <https://example.org/ca#> .
+
+ex:EntityRegistryShape a sh:NodeShape ;
+  sh:targetClass er:ConceptScheme ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type;
+    sh:minCount 1 ;
+    sh:in ( er:ConceptScheme )
+  ] ;
+  sh:property [
+    sh:path er:creator ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path er:contributor ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path er:label ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1   ;
+    sh:uniqueLang true
+  ] ;
+  sh:property [
+    sh:path er:license ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path er:description ;
+    sh:datatype rdf:langString ;
+    sh:minCount 1 ;
+    sh:uniqueLang true
+  ] ;
+  sh:property [
+    sh:path er:sameAs ;
+    sh:nodeKind sh:IRI
+  ] .

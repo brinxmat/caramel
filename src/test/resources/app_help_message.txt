@@ -1,0 +1,4 @@
+Usage: App [-h] [COMMAND]
+  -h, --help   Display help message
+Commands:
+  validate
