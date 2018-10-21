@@ -13,8 +13,8 @@ import static org.junit.Assert.assertEquals;
 
 public class TestApp {
 
-    ByteArrayOutputStream byteArrayOutputStream;
-    PrintStream terminal;
+    private ByteArrayOutputStream byteArrayOutputStream;
+    private PrintStream terminal;
 
     @Before
     public void setup() {
@@ -27,8 +27,6 @@ public class TestApp {
     public void tearDown() {
         System.setOut(terminal);
     }
-
-    private static final String EOL = System.lineSeparator();
 
     @Test
     public void testAppExists() {

@@ -21,6 +21,8 @@ artifacts {
 
 assemble.dependsOn(shadowJar)
 
+jar.enabled = false
+
 jar {
     manifest {
         attributes(
@@ -34,9 +36,6 @@ jar {
 }
 
 shadowJar {
-    baseName = 'shadow'
-    classifier = null
-    version = null
 }
 
 dependencies {

@@ -31,7 +31,4 @@ enum Option {
         return SHORT_PREFIX + String.valueOf(this.shortOpt);
     }
 
-    public String[] getPrefixed() {
-        return new String[]{this.prefixedShortOpt(), this.prefixedLongOpt()};
-    }
 }
