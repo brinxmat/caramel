@@ -1,7 +1,7 @@
 package no.greenall.caramel;
 
 import no.greenall.caramel.util.ResourceUtils;
-import no.greenall.caramel.utils.RdfUtils;
+import no.greenall.caramel.util.RdfUtils;
 import org.junit.Rule;
 import org.junit.Test;
 

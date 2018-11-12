@@ -1,0 +1,4 @@
+Usage: exemplify [-h] -i=FILE [-o=FILE]
+  -h, --help          Display help for command
+  -i, --input=FILE    Path to input file
+  -o, --output=FILE   Path to output file

@@ -4,7 +4,7 @@ import picocli.CommandLine;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Command;
 
-@Command(name = "App", subcommands = {Validate.class})
+@Command(name = "App", subcommands = {Validate.class, Exemplify.class})
 public class App implements Runnable {
 
     private static final String DISPLAY_HELP_MESSAGE = "Display help message";
@@ -19,6 +19,6 @@ public class App implements Runnable {
 
     @Override
     public void run() {
-
+        // NO-OP
     }
 }

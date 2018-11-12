@@ -1,0 +1,7 @@
+<http://example.org/a> a <http://www.w3.org/2000/01/rdf-schema#Class> ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Case"@en ;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Kasus"@no ;
+  <http://purl.org/dc/terms/date> [
+    <http://example.org/onto/start> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    <http://example.org/onto/end> "2018-01-02"^^<http://www.w3.org/2001/XMLSchema#date>
+  ] .
